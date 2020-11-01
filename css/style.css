@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  width: 100vw;
+  position: fixed;
+  top: 0;
+}
+
+header .topbar {
+  background-color: #2e4676;
+  text-align: center;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+header .topbar .topbar-text {
+  color: #fff;
+  font-size: 14px;
+  margin-bottom: 0px;
+  padding: 10px 0;
+}
+
+header .topbar .topbar-text .topbar-link a {
+  color: #8ca6f1;
+  font-size: 92%;
+}
+
+header .navbar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 999;
+}
+
+header .navbar .nav-container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 15px;
+  border-bottom: 1px solid #ddd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .navbar .nav-container .nav-logo {
+  width: 25%;
+  padding: 8px 0;
+}
+
+header .navbar .nav-container .nav-logo a img {
+  max-height: 50px;
+}
+
+header .navbar .nav-container .nav-menu {
+  width: 50%;
+  height: 78px;
+}
+
+header .navbar .nav-container .nav-menu ul.nav-menu-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+}
+
+header .navbar .nav-container .nav-menu ul.nav-menu-items li.nav-menu-item a {
+  color: black;
+  padding: 32px 10px;
+  font-size: 14px;
+  line-height: 1;
+  display: block;
+  text-transform: uppercase;
+}
+
+header .navbar .nav-container .nav-menu ul.nav-menu-items li.nav-menu-item a:hover {
+  color: #233445;
+}
+
+header .navbar .nav-container .nav-menu ul.nav-menu-items li.dropdown {
+  text-decoration: none;
+}
+
+header .navbar .nav-container .nav-menu ul.nav-menu-items li.dropdown a {
+  text-transform: uppercase;
+  color: black;
+  padding: 32px 10px;
+  font-size: 14px;
+  line-height: 1;
+  display: block;
+}
+
+header .navbar .nav-container .nav-menu ul.nav-menu-items li.dropdown a:hover {
+  color: #233445;
+}
+
+header .navbar .nav-container .nav-menu ul.nav-menu-items li.dropdown ul.drop-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  z-index: 10;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #fff;
+  border-bottom: 5px solid #2e4676;
+  width: 100vw;
+  height: auto;
+  left: 0%;
+  top: -999px;
+  padding-left: 50px;
+  -webkit-box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+}
+
+header .navbar .nav-container .nav-menu ul.nav-menu-items li.dropdown ul.drop-menu a {
+  padding: 0;
+}
+
+header .navbar .nav-container .nav-menu ul.nav-menu-items li.dropdown ul.drop-menu .drop-menu-items {
+  left: 50px;
+  width: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-right: 35px;
+}
+
+header .navbar .nav-container .nav-menu ul.nav-menu-items li.dropdown ul.drop-menu .drop-menu-items ul {
+  padding: 25px;
+  width: 25%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+header .navbar .nav-container .nav-menu ul.nav-menu-items li.dropdown ul.drop-menu .drop-menu-items ul li a {
+  margin-bottom: 8px;
+}
+
+header .navbar .nav-container .nav-menu ul.nav-menu-items li.dropdown ul.drop-menu .drop-menu-items ul h4 a {
+  margin-bottom: 12px;
+}
+
+header .navbar .nav-container .nav-menu ul.nav-menu-items li.dropdown ul.drop-menu img {
+  width: 25%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: auto;
+}
+
+header .navbar .nav-container .nav-right-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 25%;
+  height: 38px;
+  padding: 0 15px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .navbar .nav-container .nav-right-menu .nav-right-menu-item > a {
+  padding: 8px 0;
+  display: block;
+  width: 40px;
+}
+
+section {
+  height: 100vh;
+}
+/*# sourceMappingURL=style.css.map */
